@@ -1,11 +1,11 @@
-*{
+* {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
     font-family: sans-serif;
 }
 
-body{
+body {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,12 +13,12 @@ body{
     background-color: rgb(197, 197, 197);
 }
 
-.container{
+.container {
     position: relative;
     height: 50px;
 }
 
-.search{
+.search {
     outline: none;
     background: #fff;
     border: O;
@@ -29,7 +29,8 @@ body{
     transition: width 0.5s ease;
     border-radius: 5px;
 }
-.button{
+
+.button {
     background-color: #fff;
     border: 0;
     cursor: pointer;
@@ -43,27 +44,36 @@ body{
     border-radius: 5px;
 }
 
-.container.active .search{
+.container.active .search {
     width: 200px;
 }
 
-.container.active .button{
-    transform: translateY(198px);
+.container.active .button {
+    transform: translateX(198px);
     background-color: royalblue;
 }
 
-.button.active{
+.container.active .button:hover {
+    transform: translateX(198px);
+    background-color: rgb(225, 65, 65);
+}
+
+.button.active {
     margin-left: 1.5rem;
 }
 
-.fa-times{
+.fa-times {
     opacity: 0;
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
 }
 
-.fa-times.active{
+.fa-times.active {
     opacity: 1;
+}
+
+.button:hover {
+    background-color: royalblue;
 }
